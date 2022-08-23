@@ -11,8 +11,8 @@ import { SvnvenComponent } from './navbar/svnven/svnven.component';
 
 
 const routes: Routes = [
-  { path: '', component:AppComponent},
-  { path: 'app', component:AppComponent},
+  
+  
   { path: 'about', component:AboutComponent},
   { path: 'contact', component:ContactComponent},
   { path: 'git', component:GitComponent},
@@ -21,6 +21,17 @@ const routes: Routes = [
   { path: 'gitven', component: GitvenComponent},
   { path: 'svnven', component: SvnvenComponent},
 
+
+  // Redirecciones de App
+  { path: 'app/home', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'app/about', redirectTo: 'about', pathMatch: 'full'},
+  { path: 'app/contact', redirectTo: 'contact', pathMatch: 'full'},
+  { path: 'app/git', redirectTo: 'git', pathMatch: 'full'},
+  { path: 'app/svn', redirectTo: 'svn', pathMatch: 'full'},
+  { path: 'app/gitven', redirectTo: 'gitven', pathMatch: 'full'},
+  { path: 'app/svnven', redirectTo: 'svnven', pathMatch: 'full'},
+
+  // Redirecciones de Home
   { path: 'home/home', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home/about', redirectTo: 'about', pathMatch: 'full'},
   { path: 'home/contact', redirectTo: 'contact', pathMatch: 'full'},
@@ -28,6 +39,7 @@ const routes: Routes = [
   { path: 'home/svn', redirectTo: 'svn', pathMatch: 'full'},
   { path: 'home/gitven', redirectTo: 'gitven', pathMatch: 'full'},
   { path: 'home/svnven', redirectTo: 'svnven', pathMatch: 'full'},
+  { path: 'home/app', redirectTo: 'app', pathMatch: 'full'},
 
 // Redirecciones de About
 { path: 'about/home', redirectTo: 'home', pathMatch: 'full'},
@@ -37,6 +49,7 @@ const routes: Routes = [
 { path: 'about/svn', redirectTo: 'svn', pathMatch: 'full'},
 { path: 'about/gitven', redirectTo: 'gitven', pathMatch: 'full'},
 { path: 'about/svnven', redirectTo: 'svnven', pathMatch: 'full'},
+{ path: 'about/app', redirectTo: 'app', pathMatch: 'full'},
 
 // Redirecciones de Contact
 { path: 'contact/home', redirectTo: 'home', pathMatch: 'full'},
@@ -46,6 +59,7 @@ const routes: Routes = [
 { path: 'contact/svn', redirectTo: 'svn', pathMatch: 'full'},
 { path: 'contact/gitven', redirectTo: 'gitven', pathMatch: 'full'},
 { path: 'contact/svnven', redirectTo: 'svnven', pathMatch: 'full'},
+{ path: 'contact/app', redirectTo: 'app', pathMatch: 'full'},
 
 // Redirecciones de Git
 { path: 'git/home', redirectTo: 'home', pathMatch: 'full'},
@@ -55,6 +69,7 @@ const routes: Routes = [
 { path: 'git/svn', redirectTo: 'svn', pathMatch: 'full'},
 { path: 'git/gitven', redirectTo: 'gitven', pathMatch: 'full'},
 { path: 'git/svnven', redirectTo: 'svnven', pathMatch: 'full'},
+{ path: 'git/app', redirectTo: 'app', pathMatch: 'full'},
 
 // Redirecciones de SVN
 { path: 'svn/home', redirectTo: 'home', pathMatch: 'full'},
@@ -64,6 +79,7 @@ const routes: Routes = [
 { path: 'svn/svn', redirectTo: 'svn', pathMatch: 'full'},
 { path: 'svn/gitven', redirectTo: 'gitven', pathMatch: 'full'},
 { path: 'svn/svnven', redirectTo: 'svnven', pathMatch: 'full'},
+{ path: 'svn/app', redirectTo: 'app', pathMatch: 'full'},
 
 // Redirecciones de Gitven
 { path: 'gitven/home', redirectTo: 'home', pathMatch: 'full'},
@@ -73,6 +89,7 @@ const routes: Routes = [
 { path: 'gitven/svn', redirectTo: 'svn', pathMatch: 'full'},
 { path: 'gitven/gitven', redirectTo: 'gitven', pathMatch: 'full'},
 { path: 'gitven/svnven', redirectTo: 'svnven', pathMatch: 'full'},
+{ path: 'gitven/app', redirectTo: 'app', pathMatch: 'full'},
 
 // Redirecciones de SVNven
 { path: 'svnven/home', redirectTo: 'home', pathMatch: 'full'},
@@ -82,6 +99,7 @@ const routes: Routes = [
 { path: 'svnven/svn', redirectTo: 'svn', pathMatch: 'full'},
 { path: 'svnven/gitven', redirectTo: 'gitven', pathMatch: 'full'},
 { path: 'svnven/svnven', redirectTo: 'svnven', pathMatch: 'full'},
+{ path: 'svnven/app', redirectTo: 'app', pathMatch: 'full'},
 
 
 ];
